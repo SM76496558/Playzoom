@@ -5,24 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.diego.playzoom.PrincipalActivity">
-    
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/apl_playzoom"
         android:layout_width="match_parent"
-        android:elevation="16dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:elevation="16dp">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/tb_playzoom"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_theme_dark_onPrimaryContainer"
             android:elevation="8dp"
-            app:title="Hola"
             app:subtitle="mundo"
             app:subtitleTextColor="@color/cardview_dark_background"
-            app:titleTextColor="@color/md_theme_dark_background"
-            android:background="@color/md_theme_dark_onPrimaryContainer"
-            android:layout_height="wrap_content">
-            
+            app:title="Hola"
+            app:titleTextColor="@color/md_theme_dark_background">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -35,11 +35,13 @@
         android:id="@+id/fab_add_movie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@null"
-        app:fabSize="normal"
-        android:src="@drawable/ic_add_movie"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        app:elevation="8dp"/>
+        android:contentDescription="@null"
+        app:elevation="8dp"
+        app:fabSize="normal" />
+        <!--android:src="@drawable/ic_add_movie"-->
+
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

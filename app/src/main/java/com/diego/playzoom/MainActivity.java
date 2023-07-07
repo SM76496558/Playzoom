@@ -9,23 +9,22 @@ import com.diego.playzoom.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    //private Button btnGetStarted;
-    private ActivityMainBinding binding;
+  //private Button btnGetStarted;
+  private ActivityMainBinding binding;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    binding = ActivityMainBinding.inflate(getLayoutInflater());
+    setContentView(binding.getRoot());
 
-        binding.btnGetStarted.setOnClickListener(v -> {
-            //Toast.makeText(this, "Comenzar", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
-            finish();
-        });
+    binding.btnGetStarted.setOnClickListener(v -> {
+      //Toast.makeText(this, "Comenzar", Toast.LENGTH_SHORT).show();
+      Intent intent = new Intent(this, LoginActivity.class);
+      startActivity(intent);
+      finish();
+    });
 
-        binding.txtMovie.setText("Mira tu pelicula \n " +
-                "favorita");
-    }
+    binding.txtMovie.setText("Mira tu pelicula \n " + "favorita");
+  }
 }
